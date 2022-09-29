@@ -27,7 +27,7 @@
   width: 250px;
 }
 .menu {
-  background-color: black;
+  background-color: black !important;
   color: white;
 }
 .container-fluid {
@@ -63,7 +63,7 @@
 }
 .Media__Right-notice p {
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 100;
 }
 .Right-notice__search {
@@ -87,13 +87,14 @@
   justify-content: space-around;
   color: white;
   padding: 20px;
-  height: 200px;
+  height: 150px;
 }
 .Right-tax__title{
-  font-size: 40px;
+  font-size: 30px;
 }
 .Right-tax__description {
-  font-size: 20px;
+  font-size: 16px;
+  text-align: center;
 }
 .newsletter {
   padding-left: 20px;
@@ -111,21 +112,24 @@
 .title p {
   border-top: 2px solid red;
   width: 150px;
-  font-size: 40px;
+  font-size: 30px;
   margin: 20px;
   padding-top: 5px;
   text-align: center;
   line-height: 40px;
   font-weight: 400;
 }
+.newsletter__container{
 
+}
 .newsletter__container-card {
   border: 1px solid #dadada;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 10px;
   width: 320px;
+  height: 400px;
   /* align-items: center; */
 }
 .container-card__image {
@@ -138,7 +142,7 @@
 }
 .container-card-title {
   color: #db536a;
-  font-size: 25px;
+  font-size: 16px;
   text-decoration: none;
 }
 .container-card-title:hover{
@@ -149,12 +153,12 @@
 .card__image-description {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 450px;
-  padding: 0 20px 0 20px;
+  justify-content: space-between;
+  padding: 20px 20px 20px 20px;
+  height: 100%;
 }
 .container-card-date {
-  font-size: 25px;
+  font-size: 16px;
   color: black;
   text-decoration: none;
 }
@@ -163,7 +167,7 @@
   color: black;
 }
 .container-card-images img {
-  width: 40px;
+  width: 30px;
 }
 .share{
   padding: 20px;
@@ -178,12 +182,12 @@ align-items: center;
   justify-content: space-around;
   align-items: center;
   padding: 10px 20px 10px 20px;
-  height: 400px;
+  height: 250px;
   width: 100%;
 }
 .share__social h4{
   border-top: 1px solid red;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   width: 200px;
 }
@@ -203,13 +207,13 @@ align-items: center;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 350px;
+  height: 250px;
 }
 .share__email-info img{
   width: 70px;
 }
 .share__email-info p{
-  font-size: 25px;
+  font-size: 16px;
   width: 200px;
   text-align: center;
 }
@@ -267,10 +271,58 @@ footer{
   padding-right: 40px;
 }
 .footer__title{
-  font-size: 25px;
+  font-size: 20px;
   border-top: 5px solid gray;
 }
 footer p{
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .menu__superior{
+    padding: 20px;
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+  }
+  .menu__superior div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu__superior img{
+    width: 30px;
+  }
+  .menu__superior p{
+    margin: 0;
+  }
+  .header{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .Media__Right-notice{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .Right-notice__search{
+    width: 400px;
+  }
+  .Right-notice__search input{
+    width: 350px;
+  }
+  .newsletter__container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .newsletter__container-card{
+    margin: 20px;
+  }
+  @media (min-width: 1280px) {
+    .Banner{
+      height: 300px;
+    }
+  }
 }
