@@ -1,5 +1,5 @@
 * {
-  font-family: Helvetica-Neue;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -40,6 +40,12 @@
   margin-left: 10px;
 }
 .nav-link {
+  color: white;
+}
+.nav-link:hover{
+  text-decoration: underline;
+}
+.nav-link:focus, .nav-link:hover{
   color: white;
 }
 .Banner {
@@ -118,9 +124,6 @@
   text-align: center;
   line-height: 40px;
   font-weight: 400;
-}
-.newsletter__container{
-
 }
 .newsletter__container-card {
   border: 1px solid #dadada;
@@ -297,10 +300,20 @@ footer p{
   .menu__superior p{
     margin: 0;
   }
+  .menu{
+    height: 100px;
+  }
+  .fluid__div-ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
   .header{
     flex-direction: row;
     justify-content: space-around;
+    height: 100px;
   }
+  
   .Media__Right-notice{
     padding-top: 40px;
     padding-bottom: 40px;
@@ -320,9 +333,45 @@ footer p{
   .newsletter__container-card{
     margin: 20px;
   }
-  @media (min-width: 1280px) {
+
+  @media (min-width: 1150px) {
     .Banner{
       height: 300px;
+    }
+    .SubMenu{
+      display: flex;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: normal;
+    }
+    .SubMenu a{
+      padding: 15px;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      width: 200px;
+      color: white;
+      height: 100%;
+    }
+    .SubMenu a:hover{
+      background-color: gray;
+    }
+    .SubMenu__First{
+      background-color: #DB536A;
+      text-decoration: none;
+      color: white;
+    }
+    .Media{
+      display: flex;
+      flex-direction: row;
+    }
+    .Media__Right{
+      width: 100%;
+    }
+    .Media__carousel{
     }
   }
 }
